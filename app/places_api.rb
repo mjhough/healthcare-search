@@ -6,8 +6,8 @@ class PlacesApi
   end
 
   def hospitals(lat, long)
-    if lat.to_s.length >= -90 && lat.to_s.length <= 90 && long.to_s.length >= -180 && long.to_s.length <= 180
-      @client.spots(lat, long, :name => 'hospital') 
-    end
+    # if... need to validate latitude and longitude values
+      @client.spots(lat, long, :name => 'hospital')
+    # end
   end
 end
