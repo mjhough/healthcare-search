@@ -1,7 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rack'
-gem 'rack-test'
+gem 'sinatra'
+gem 'shotgun'
+
 gem 'rspec'
 gem 'pry'
+
 gem 'google_places'
