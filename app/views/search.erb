@@ -1,7 +1,0 @@
-<% places = PlacesApi.new %>
-
-<ul>
-<% places.hospitals(params[:latitude].to_f, params[:longitude].to_f).each do |hospital| %>
-    <li><%= hospital.name %></li>
-<% end %>
-<ul>

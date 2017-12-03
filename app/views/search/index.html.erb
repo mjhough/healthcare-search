@@ -1,0 +1,14 @@
+<!DOCTYPE html>    
+<html>
+    <head>
+        <title>Tolenno - Healthcare Search</title>
+    </head>
+    <body>
+        <%= form_tag search_path do %>
+        <label for="search">Address:</label>
+        <%= text_field_tag :search %>
+        <br>
+        <%= submit_tag "Search" %>
+    <% end %>
+    </body>
+</html>

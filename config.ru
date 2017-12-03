@@ -1,8 +1,4 @@
-require "sinatra"
-require "google_places"
-require "pry"
+# This file is used by Rack-based servers to start the application.
 
-require_relative "./app/application.rb"
-require_relative "./app/places_api.rb"
-run Application.new
-# use PlacesApi.new
+require ::File.expand_path('../config/environment', __FILE__)
+run Rails.application

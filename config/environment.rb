@@ -1,8 +1,5 @@
-# require "google_places"
-require 'bundler/setup'
-require "pry"
+# Load the Rails application.
+require File.expand_path('../application', __FILE__)
 
-Bundler.require
-
-require_relative "../app/places_api.rb"
-require_relative "../app/application"
+# Initialize the Rails application.
+Rails.application.initialize!
